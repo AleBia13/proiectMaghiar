@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+    <div>
+        <div class="agile-field-text">
+            <label><i>Username</i></label>
+            <input type="text" name="Name" placeholder="Enter user name" required=""/>
+        </div>
+        <div class="agile-field-text">
+            <label><i>Password</i></label>
+            <input type="password" name="Password" placeholder="Enter password" required="" id="myInput"/>
+        </div>
+    
+        <input type="submit" value="LOGIN" />
+    </form>
+        @RenderBody()
+    </div>
+</body>
+</html>

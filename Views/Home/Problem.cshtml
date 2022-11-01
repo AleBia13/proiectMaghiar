@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Problema de rezolvat";
+}
+@model proiectMaghiar.Models.Problem
+
+
+<h1>@ViewData["Title"]</h1>
+
+<br />
+
+<div class="cerinta">
+<h4>PROBLEM 1</h4>
+    
+    <p>
+        Given a string s, find the length of the longest
+        substring
+        without repeating characters.
+    </p>
+
+</div>
+ <form id="problem" method="post">
+    <div class="form-floating">
+        <input asp-for="inputString" class="form-control" autocomplete="username" aria-required="false" />
+        <label asp-for="inputString" class="form-label"></label >
+        <span asp-validation-for="@Model.inputString" class="text-danger"></span>
+    </div>
+    <br />
+    <div>
+        <button id="login-submit" type="submit" class="w-10 btn btn-lg btn-primary">Submit string</button>
+    </div>
+</form>
+<br />
+<p>The longest substring has: </p>
+    @ViewBag.mesaj
+<br />
+<br />
+<br />
+<div class="solution-details">
+    <b>Solution:</b>
+    <p> The algorithm goes through the string and stores 
+        in the "ant" variable the position of the last element in the substring that is not repeated.
+        After a repeated character is found, it would compare the length with the variable "current" (local longest substring without repeated characters)
+        and then return the solution of the problem.
+   </p>
+</div>
+
+
+
+
+
+
+
